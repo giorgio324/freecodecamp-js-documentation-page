@@ -1,0 +1,114 @@
+:root {
+    --transition: all 0.3s linear;
+    --clr-primary-1: hsl(184, 96%, 32%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+label {
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+body {
+    text-transform: capitalize;
+}
+
+.section_center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+.title_link{
+    border-top: 1px solid;   
+}
+#last_link{
+    border-bottom: 1px solid;  
+}
+.title{
+    width: 100%;
+}
+.title_text h1{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+.nav-link{
+    display: block;
+    padding: 1rem;
+    color: black;
+}
+.main-section{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+    width: 90%;
+}
+
+.doc_text{
+    padding: 1rem;
+}
+.doc_text ul li {
+    margin-left: 3rem;
+    margin-top: 1rem;
+    list-style: disc;
+}
+.doc_text p{
+    margin-top: 1rem;
+}
+.doc_text .example{
+    margin-left: 1rem;
+    background: #ececec;
+    border-radius: 5px;
+}
+.example p{
+    padding: 0.55rem;
+    font-size: 1.05rem;
+}
+.doc_title{
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width:992px) {
+    .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    z-index: 2;
+    height: 100%;
+    border-right: 2px solid grey;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        padding-left: 20%;
+    }
+}
